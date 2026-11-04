@@ -1,13 +1,13 @@
 Package: com.example.nsc16
-Version: 0.0.1-1
+Version: 0.0.2-1
 Architecture: iphoneos-arm64
 Maintainer: alexandr
 Installed-Size: 168
-Filename: debs/com.example.nsc16_0.0.1-1_iphoneos-arm64.deb
-Size: 6678
-MD5sum: 23b365ad8c66677e0a61943acf9a3882
-SHA1: 511efed84f6f86890ad21cdbe96bd7c70f6148a4
-SHA256: 2c47b325a3c2794208c2ad784ec80ae7d9d73ff066507c0c659ec0ef6b5dfd49
+Filename: debs/com.example.nsc16_0.0.2-1_iphoneos-arm64.deb
+Size: 6586
+MD5sum: 09fed27db69117e7201fa3f6c5877c90
+SHA1: 009edb29343882d79a373d61789f4ec0e007682e
+SHA256: 2e0365d909930493d3c49c3a9ec24e1677beadb50bf8c5760a227ca3a42c5c48
 Section: Tweaks
 Description: Ternary clock on charging while phone is horizontal
 Author: alexandr

@@ -95,10 +95,7 @@ static void NCOrientationChanged(void) {
     });
 }
 
-%hook SpringBoard
-
-- (void)applicationDidFinishLaunching:(id)application {
-    %orig;
+static void NCSetup(void) {
     [UIDevice currentDevice].batteryMonitoringEnabled = YES;
 
     [[NSNotificationCenter defaultCenter] addObserverForName:UIDeviceBatteryStateDidChangeNotification
@@ -114,6 +111,15 @@ static void NCOrientationChanged(void) {
                                                   usingBlock:^(NSNotification *_) {
         NCOrientationChanged();
     }];
+
+    // проверим состояние сразу же при загрузке твика
+    NCEvaluate();
 }
 
-%end
+%ctor {
+    // Основной поток, после загрузки SpringBoard
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)),
+                   dispatch_get_main_queue(), ^{
+        NCSetup();
+    });
+}
