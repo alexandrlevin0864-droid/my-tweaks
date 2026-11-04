@@ -1,5 +1,8 @@
 packages/
 .theos/
-*.deb
 *.dylib
 _obj/
+NSC16/packages/
+!debs/
+debs/*.deb
+!debs/*.deb

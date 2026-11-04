@@ -1,0 +1,23 @@
+Origin: MY Tweaks
+Label: MY Tweaks
+Suite: stable
+Version: 1.0
+Codename: ios
+Architectures: iphoneos-arm
+Components: main
+Description: Репозиторий твиков MY Tweaks
+MD5sum:
+ ed341bedf32946d56bf0bdc8f4af0be5 453 Packages
+ a677458cfa075256ca1d82698f84019e 342 Packages.gz
+ fe4442e07efefb15abcb81ea24e8a954 363 Packages.bz2
+ 2ba65e939b3c54c517775d4219933779 412 Packages.xz
+SHA1:
+ 0bd9a7f08a0fcb3168d28e808fc476eed069aad1 453 Packages
+ c9f7669b42fb95937bfb2c1bdd95e9c0b5f81255 342 Packages.gz
+ 385b7beed151f4c810116aada80d360e686876a7 363 Packages.bz2
+ a9d2d265bf9579ec9bdc242f01cb849d193f7c90 412 Packages.xz
+SHA256:
+ 7d4e545f0fe4c9706f8348ff1f8aab03dd22c11780b2c9da8c14fafcd7d6e863 453 Packages
+ 96df04c9203ecf9a11f78de5ee8c65fb01a461b678ef591d5a85faa08fa175a1 342 Packages.gz
+ 202e545f19d720a0b57cee4b02e67b3f1a81f907be413af154278bccfc4ffc69 363 Packages.bz2
+ 541a3bbee789a3d188a67d3983893468513581d028f9ff11bdef9a5bcbe7243c 412 Packages.xz
