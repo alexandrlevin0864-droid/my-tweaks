@@ -1,5 +1,6 @@
 Origin: MY Tweaks
 Label: MY Tweaks
+Architectures: iphoneos-arm iphoneos-arm64
 Description: Репозиторий твиков MY Tweaks
 MD5sum:
  1d7f2ad74b2692aa50d79fddcc439950 910 Packages
