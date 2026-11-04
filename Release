@@ -3,21 +3,21 @@ Label: MY Tweaks
 Suite: stable
 Version: 1.0
 Codename: ios
-Architectures: iphoneos-arm
+Architectures: iphoneos-arm64
 Components: main
 Description: Репозиторий твиков MY Tweaks
 MD5sum:
- ed341bedf32946d56bf0bdc8f4af0be5 453 Packages
- a677458cfa075256ca1d82698f84019e 342 Packages.gz
- fe4442e07efefb15abcb81ea24e8a954 363 Packages.bz2
- 2ba65e939b3c54c517775d4219933779 412 Packages.xz
+ bc10c0fc087b396c114b0d8dd9eb6610 457 Packages
+ 856597eee228725158a7ac278d9ddac3 348 Packages.gz
+ fed2a524ee3713346ca808c4706a2011 369 Packages.bz2
+ d168427972ebbd7d9ecb42527bf3a56d 416 Packages.xz
 SHA1:
- 0bd9a7f08a0fcb3168d28e808fc476eed069aad1 453 Packages
- c9f7669b42fb95937bfb2c1bdd95e9c0b5f81255 342 Packages.gz
- 385b7beed151f4c810116aada80d360e686876a7 363 Packages.bz2
- a9d2d265bf9579ec9bdc242f01cb849d193f7c90 412 Packages.xz
+ 71a50cf034c7557794d5beb3c2968fe0edd85477 457 Packages
+ 4898a7a843860f7bad2093f20d91460a6a59e093 348 Packages.gz
+ 12d5bac6f658ccc0047a48c1195385c95afaa088 369 Packages.bz2
+ 00b5a8884cafe48d2828516d6ced4cd890026427 416 Packages.xz
 SHA256:
- 7d4e545f0fe4c9706f8348ff1f8aab03dd22c11780b2c9da8c14fafcd7d6e863 453 Packages
- 96df04c9203ecf9a11f78de5ee8c65fb01a461b678ef591d5a85faa08fa175a1 342 Packages.gz
- 202e545f19d720a0b57cee4b02e67b3f1a81f907be413af154278bccfc4ffc69 363 Packages.bz2
- 541a3bbee789a3d188a67d3983893468513581d028f9ff11bdef9a5bcbe7243c 412 Packages.xz
+ 027b1d5ecc02cd2b25c2e3ac3dbd9799fa347bdb91ac97a036335d66a6c4686b 457 Packages
+ 1d23b0047d8a7c6248b13c704d96ef0b713c15fbc0a89a09a38fca7b43cd5eb4 348 Packages.gz
+ 370b4d5e6b7ae7bf6ff122fb147ee0e81a02e6eb00d71cd4baf7bb53f7ff75fa 369 Packages.bz2
+ c4c83c7c5a431e0a54e4d84578d372ddbe4bb7312ae61ad5074ed8d7f5ac0b7f 416 Packages.xz

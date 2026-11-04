@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: MY Tweaks
+Label: MY Tweaks
+Suite: stable
+Version: 1.0
+Codename: ios
+Architectures: iphoneos-arm64
+Components: main
+Description: Репозиторий твиков MY Tweaks
+MD5sum:
+ bc10c0fc087b396c114b0d8dd9eb6610 457 Packages
+ 856597eee228725158a7ac278d9ddac3 348 Packages.gz
+ fed2a524ee3713346ca808c4706a2011 369 Packages.bz2
+ d168427972ebbd7d9ecb42527bf3a56d 416 Packages.xz
+SHA1:
+ 71a50cf034c7557794d5beb3c2968fe0edd85477 457 Packages
+ 4898a7a843860f7bad2093f20d91460a6a59e093 348 Packages.gz
+ 12d5bac6f658ccc0047a48c1195385c95afaa088 369 Packages.bz2
+ 00b5a8884cafe48d2828516d6ced4cd890026427 416 Packages.xz
+SHA256:
+ 027b1d5ecc02cd2b25c2e3ac3dbd9799fa347bdb91ac97a036335d66a6c4686b 457 Packages
+ 1d23b0047d8a7c6248b13c704d96ef0b713c15fbc0a89a09a38fca7b43cd5eb4 348 Packages.gz
+ 370b4d5e6b7ae7bf6ff122fb147ee0e81a02e6eb00d71cd4baf7bb53f7ff75fa 369 Packages.bz2
+ c4c83c7c5a431e0a54e4d84578d372ddbe4bb7312ae61ad5074ed8d7f5ac0b7f 416 Packages.xz
+-----BEGIN PGP SIGNATURE-----
+
+iQEzBAEBCgAdFiEE7UYqOvoroW8k5FwgWmFfDibjE9UFAmrre5kACgkQWmFfDibj
+E9Vriwf9G+2CsSJAd0k8pVbTWCH+LAVpXskOAYAX0SVG4F9WoDuaQhsK8p3RtmAB
+WnhC9KYlM5Ih/BU5oNfUaaTKPHei0CyOMNI2slA/25Q0Nx8bXMx1IaNk9BJIVBib
+uLiNg8xgRrLa8M5cfeMdAQ4cm0lJY0BuagtJ9cFE4Nv4GhLa39c3r14iiuuHGpb5
+zHTGwtZA26LMG9nvEghPGgJPZ/NSNk1DA5kVBeivm+qL+nmNaTng36A5jjwMno8b
+WsSuuAuZNRf3HdXmE8ZCHbQFHP2k5OwGzOlr5ny5XMiFqeL5ITr5490yLy2oNBs5
+uwgWaqrxZ9wPNKKC9f69uJpV5Rd45w==
+=V8lX
+-----END PGP SIGNATURE-----
