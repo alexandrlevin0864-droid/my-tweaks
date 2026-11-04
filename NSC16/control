@@ -1,6 +1,6 @@
 Package: com.example.nsc16
 Name: NSC16
-Version: 0.0.2
+Version: 0.0.3
 Architecture: iphoneos-arm64
 Description: Ternary clock on charging while phone is horizontal
 Maintainer: alexandr

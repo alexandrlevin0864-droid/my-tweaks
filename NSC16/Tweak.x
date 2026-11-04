@@ -15,6 +15,8 @@ static BOOL NCLsHorizontal(void) {
     return o == UIDeviceOrientationLandscapeLeft || o == UIDeviceOrientationLandscapeRight;
 }
 
+#define NCLog(fmt, ...) NSLog(@"[NSC16] " fmt, ##__VA_ARGS__)
+
 static void NCUpdateClockText(void) {
     if (!clockLabel) return;
     NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
@@ -77,7 +79,12 @@ static void NCCreateWindow(void) {
 }
 
 static void NCEvaluate(void) {
-    if (NCLsCharging() && NCLsHorizontal()) {
+    BOOL charging = NCLsCharging();
+    BOOL hz = NCLsHorizontal();
+    NCLog(@"evaluate: charging=%d horizontal=%d batteryState=%ld orient=%ld",
+          charging, hz, (long)[UIDevice currentDevice].batteryState,
+          (long)[UIDevice currentDevice].orientation);
+    if (charging && hz) {
         NCCreateWindow();
     } else {
         NCDestroyWindow();
@@ -96,6 +103,7 @@ static void NCOrientationChanged(void) {
 }
 
 static void NCSetup(void) {
+    NCLog(@"NSSC16 loaded, setting up observers");
     [UIDevice currentDevice].batteryMonitoringEnabled = YES;
 
     [[NSNotificationCenter defaultCenter] addObserverForName:UIDeviceBatteryStateDidChangeNotification
