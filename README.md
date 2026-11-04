@@ -6,6 +6,10 @@
 https://alexandrlevin0864-droid.github.io/my-tweaks/
 ```
 
+Репозиторий подписан GPG-ключом. Публичный ключ: [`gpg-key.asc`](gpg-key.asc).
+
+Отпечаток: `ED46 2A3A FA2B A16F 24E4  5C20 5A61 5F0E 26E3 13D5`
+
 ## Твики
 
 | Твик | Описание |
@@ -30,6 +34,7 @@ make package DEBUG=0
 ```bash
 dpkg-scanpackages -m . > Packages
 gzip -kf Packages; bzip2 -kf Packages; xz -kf Packages
-# перегенерируй Release (контрольные суммы)
+# перегенерируй Release (контрольные суммы) и подпиши его
+gpg --batch --yes --detach-sign -o Release.gpg Release
 git add -A && git commit -m "..." && git push
 ```
