@@ -1,5 +1,9 @@
 # MY Tweaks — Sileo/Cydia репозиторий
 
+<p align="center">
+  <img src="repo-cover.jpg" alt="MY Tweaks" width="200">
+</p>
+
 Репозиторий твиков для jailbreak (iOS). Добавь в Sileo/Cydia:
 
 ```
@@ -10,7 +14,7 @@ https://alexandrlevin0864-droid.github.io/my-tweaks/
 
 Отпечаток: `ED46 2A3A FA2B A16F 24E4  5C20 5A61 5F0E 26E3 13D5`
 
-Пакеты собраны для **rootless** (Dopamine / palera1n), архитектура `iphoneos-arm64`.
+Пакеты собраны для **rootless** (Dopamine / palera1n) — `iphoneos-arm64`, и для **rootful** — `iphoneos-arm`.
 
 ## Твики
 
