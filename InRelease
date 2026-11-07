@@ -3,7 +3,11 @@ Hash: SHA512
 
 Origin: MY Tweaks
 Label: MY Tweaks
+Suite: stable
+Version: 1.0
+Codename: ios
 Architectures: iphoneos-arm iphoneos-arm64
+Components: main
 Description: Репозиторий твиков MY Tweaks
 MD5sum:
  3aa28e7f0b1f09b0fd6aaa5212f15371 910 Packages
@@ -22,12 +26,12 @@ SHA256:
  4a947375c9e5fd85fef39c426c61da756d12eac825375510048a3b1a40138eb7 520 Packages.xz
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCgAdFiEE7UYqOvoroW8k5FwgWmFfDibjE9UFAmrvFcoACgkQWmFfDibj
-E9VNjgf+N6XQKmYF0J4oZGlCxP/a73sYfg8h4PV4ihYJzgYx3uItyWqlFWRQ4XlW
-SWq9g6GUr2whHq75hbSy/RtwxO/RhdToz6EyuVZhCCmn8dFqLvpB7PNXVtUqnuNI
-34Y1gXr2hO5L2swTf7APo8k9GHFslRxPmFPOx3moSW1U8KqKDlLPp282qGG0+suO
-ghGCluyMGNfpmedtuSVu5/uob/x9cx67tRRMJgSHAAYV55nT5fNOLio4eTpJsXpq
-HOsSAGXEfhyTBd21/KWx+kLdWepvio0pIbeFl7a0HAYRKVKPwpXJU6uSrMgzhfB3
-gdrwMsCCaXYXbkXFTCuvNzV/5+mz+g==
-=OlyP
+iQEzBAEBCgAdFiEE7UYqOvoroW8k5FwgWmFfDibjE9UFAmrvF/QACgkQWmFfDibj
+E9XEOAgArdV7GOHvN8FDPKlvkpUeuRg5f/dTDmMa7G8MCVM1O/nsLL/hAYCfmCCK
+/wFeJJEluqwwQPQ/q0TMHHYxhNW/1hJk0Rd8Ul2QDLTaDJ0DjCluhlSe344PvYEM
+plnq3sTiz3SUzP6mKChU0N6t8ma69AxZRl5MRjmfAnw3brUSI2uBYZizABVo1N6w
+ebCyaRJZ4LQRC6iY6HruCWcPrxZ2QpMX9/Ne7WMj9vvac1wDWOCfuAocJlumzIfU
+8HkIlAsnSqhpi9atldC1CBqDK94pr1pX/vai/3VWT0eQvh1AAXnrjmv/PcRkR0Gt
+MlBzWEt7ANJTcn7wAI1Un61+MFnAVg==
+=tCcs
 -----END PGP SIGNATURE-----
