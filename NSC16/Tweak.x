@@ -1,6 +1,19 @@
 #import <UIKit/UIKit.h>
 #import <objc/runtime.h>
 
+static NSString *const kPrefsId = @"com.example.nsc16";
+
+static BOOL NCIsEnabled(void) {
+    NSDictionary *prefs = [NSDictionary dictionaryWithContentsOfFile:@"/var/mobile/Library/Preferences/com.example.nsc16.plist"];
+    if (!prefs) prefs = [NSDictionary dictionaryWithContentsOfFile:@"/var/jb/var/mobile/Library/Preferences/com.example.nsc16.plist"];
+    if (!prefs) {
+        id v = [[NSUserDefaults standardUserDefaults] objectForKey:@"enabled"];
+        return (v == nil) ? YES : [v boolValue];
+    }
+    NSNumber *en = prefs[@"enabled"];
+    return (en == nil) ? YES : en.boolValue;
+}
+
 static UIWindow *nightstandWindow = nil;
 static UILabel *clockLabel = nil;
 static NSTimer *clockTimer = nil;
@@ -52,9 +65,17 @@ static void NCCreateWindow(void) {
     if (nightstandWindow) return;
 
     UIWindow *win = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    win.windowLevel = UIWindowLevelStatusBar + 100;
+    win.windowLevel = UIWindowLevelStatusBar + 1000;
     win.backgroundColor = [UIColor blackColor];
     win.userInteractionEnabled = NO;
+    win.hidden = NO;
+
+    // Пустой контроллер, чтобы окно корректно отрисовалось поверх SB
+    UIViewController *vc = [[UIViewController alloc] init];
+    vc.view.backgroundColor = [UIColor blackColor];
+    win.rootViewController = vc;
+    [win makeKeyAndVisible];
+    [win setHidden:NO];
 
     UILabel *label = [[UILabel alloc] initWithFrame:win.bounds];
     label.textColor = [UIColor whiteColor];
@@ -62,11 +83,10 @@ static void NCCreateWindow(void) {
     label.textAlignment = NSTextAlignmentCenter;
     label.adjustsFontSizeToFitWidth = YES;
     label.minimumScaleFactor = 0.5;
-    [win addSubview:label];
+    [vc.view addSubview:label];
     clockLabel = label;
 
     nightstandWindow = win;
-    [win setHidden:NO];
     NCUpdateClockText();
 
     if (!clockTimer) {
@@ -84,7 +104,7 @@ static void NCEvaluate(void) {
     NCLog(@"evaluate: charging=%d horizontal=%d batteryState=%ld orient=%ld",
           charging, hz, (long)[UIDevice currentDevice].batteryState,
           (long)[UIDevice currentDevice].orientation);
-    if (charging && hz) {
+    if (NCIsEnabled() && charging && hz) {
         NCCreateWindow();
     } else {
         NCDestroyWindow();
@@ -113,11 +133,19 @@ static void NCSetup(void) {
         NCEvaluate();
     }];
 
-    [[NSNotificationCenter defaultCenter] addObserverForName:UIDeviceOrientationDidChangeNotification
-                                                      object:nil
-                                                       queue:[NSOperationQueue mainQueue]
+[[NSNotificationCenter defaultCenter] addObserverForName:UIDeviceOrientationDidChangeNotification
+                                                       object:nil
+                                                        queue:[NSOperationQueue mainQueue]
                                                   usingBlock:^(NSNotification *_) {
         NCOrientationChanged();
+    }];
+
+    // Перечитываем настройки при их изменении (переключатель в Настройках)
+    [[NSNotificationCenter defaultCenter] addObserverForName:NSUserDefaultsDidChangeNotification
+                                                       object:nil
+                                                        queue:[NSOperationQueue mainQueue]
+                                                  usingBlock:^(NSNotification *_) {
+        NCEvaluate();
     }];
 
     // проверим состояние сразу же при загрузке твика
